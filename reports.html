@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html lang="en" class="no-js ie ie8"><![endif]-->
+<!--[if IE 9]><html lang="en" class="no-js ie ie9"><![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en">
+  <!--<![endif]-->
+  <head>
+    <title>My Site - Reports</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.10.0/css/lightgallery.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.min.css">
+    <!--[if lt IE 9]> <script src="js/ie9fix.min.js"></script><![endif]-->
+  </head>
+  <body class="admin-page">
+    <div id="loading-screen">
+      <div class="spinner"></div>
+    </div>
+    <header class="header fixed-header">
+      <div class="container">
+        <nav class="d-flex main-nav">
+          <div class="logo"><a href="./index.html"><img src="./assets/img/images/logo.png" width="155" alt=""></a></div>
+          <ul class="nav-list d-flex ml-auto">
+            <li class="nav-item"><a class="nav-link" href="./dashboard.html">DASHBOARD</a></li>
+            <li class="nav-item has-pulldown"><a class="nav-link" href="jobs.html">JOBS</a>
+              <ul class="nav-pulldown">
+                <li class="nav-pulldown-item"><a href="jobs.html">Active Jobs</a></li>
+                <li class="nav-pulldown-item"><a href="jobs.html">Completed Jobs</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="./accounts.html">ACCOUNTS</a></li>
+            <li class="nav-item nav-active"><a class="nav-link" href="./reports.html">REPORTS</a></li>
+            <li class="nav-item"><a class="nav-link" href="./sign-in.html">LOG OUT<i class="fas fa-sign-out-alt ml-1"></i></a></li>
+          </ul>
+          <div id="menu-toggle"><span></span><span></span><span></span><span></span></div>
+        </nav>
+      </div>
+    </header>
+    <!-- END: header-->
+    <section class="main">
+      <div class="container ui-admin">
+        <h3 class="block-job-title">REPORTS</h3>
+        <div class="reports-control row">
+          <div class="col-md-10">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label>1. Choose date range</label>
+                  <div class="input-group btn-fixed">
+                    <input class="form-control" type="text" value="11/28/2020 - 12/04/2020">
+                    <div class="input-group-append">
+                      <div class="btn"><i data-feather="calendar"></i></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label>2. Choose data</label>
+                  <select class="custom-select form-control">
+                    <option selected>Image Editor</option>
+                    <option>Video Editor</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label>3. Choose customer</label>
+                  <div class="input-group btn-fixed">
+                    <input class="form-control" type="email" value="Kent Estate Agency">
+                    <div class="input-group-append">
+                      <div class="btn"><i data-feather="search"></i></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="form-group">
+              <label class="w-100">&nbsp;</label>
+              <button class="btn btn-primary">View Report</button>
+            </div>
+          </div>
+        </div>
+        <hr class="mb-3">
+        <div class="posts-data-table wrapper my-3 tab-content">
+          <div class="tab-pane show active" id="active-jobs" role="tabpane">
+            <div class="d-none d-md-block">
+              <table class="table posts-data">
+                <thead class="text-center">
+                  <tr>
+                    <th class="action-cell">CREATED<i class="ml-1" data-feather="chevron-down"></i></th>
+                    <th class="font-weight-normal">CUSTOMER</th>
+                    <th class="font-weight-normal">POST CODE</th>
+                    <th class="font-weight-normal">ORIGNAL</th>
+                    <th class="font-weight-normal">REWORKED</th>
+                    <th class="font-weight-normal">TYPE</th>
+                    <th class="font-weight-normal">STATUS</th>
+                    <th class="font-weight-normal">EDITOR</th>
+                    <th class="font-weight-normal">ACTIONS</th>
+                  </tr>
+                </thead>
+                <tbody class="text-center">
+                  <tr>
+                    <td class="post-time pl-0">2020-12-03 15:36:44</td>
+                    <td>PEXELS</td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</td>
+                    <td>18</td>
+                    <td>0</td>
+                    <td><i class="custom-stroke" data-feather="image" width="17" height="17" stroke-width="2"></i></td>
+                    <td class="text-red font-weight-bold">NEW</td>
+                    <td><a class="author-link" href="#">John Edlios</a></td>
+                    <td><a class="btn-icon mr-2" href="job.html"><i class="custom-stroke" data-feather="edit" width="16" height="16" stroke-width="2"></i></a>
+                      <button class="btn-icon"><i class="custom-stroke" data-feather="trash" width="16" height="16" stroke-width="2"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="post-time pl-0">2020-12-03 15:36:44</td>
+                    <td>PEXELS</td>
+                    <td>4400</td>
+                    <td>18</td>
+                    <td>1</td>
+                    <td><i class="custom-stroke" data-feather="image" width="17" height="17" stroke-width="2"></i></td>
+                    <td class="text-green font-weight-bold">IN-PROGRESS</td>
+                    <td><a class="author-link" href="#">John Edlios</a></td>
+                    <td><a class="btn-icon mr-2" href="job-2.html"><i class="custom-stroke" data-feather="edit" width="16" height="16" stroke-width="2"></i></a>
+                      <button class="btn-icon"><i class="custom-stroke" data-feather="trash" width="16" height="16" stroke-width="2"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="post-time pl-0">2020-12-03 15:36:44</td>
+                    <td>PEXELS</td>
+                    <td>4400</td>
+                    <td>18</td>
+                    <td>0</td>
+                    <td><i class="custom-stroke" data-feather="video" width="17" height="17" stroke-width="2"></i></td>
+                    <td class="text-orange font-weight-bold">ASSIGNED</td>
+                    <td><a class="author-link" href="#">John Edlios</a></td>
+                    <td><a class="btn-icon mr-2" href="job.html"><i class="custom-stroke" data-feather="edit" width="16" height="16" stroke-width="2"></i></a>
+                      <button class="btn-icon"><i class="custom-stroke" data-feather="trash" width="16" height="16" stroke-width="2"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="post-time pl-0">2020-12-03 15:36:44</td>
+                    <td>PEXELS</td>
+                    <td>4400</td>
+                    <td>18</td>
+                    <td>18</td>
+                    <td><i class="custom-stroke" data-feather="video" width="17" height="17" stroke-width="2"></i></td>
+                    <td class="text-grey font-weight-bold">FINISHED</td>
+                    <td><a class="author-link" href="#">John Edlios</a></td>
+                    <td><a class="btn-icon mr-2" href="job.html"><i class="custom-stroke" data-feather="edit" width="16" height="16" stroke-width="2"></i></a>
+                      <button class="btn-icon"><i class="custom-stroke" data-feather="trash" width="16" height="16" stroke-width="2"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="post-time pl-0">2020-12-03 15:36:44</td>
+                    <td>PEXELS</td>
+                    <td>4400</td>
+                    <td>18</td>
+                    <td>18</td>
+                    <td><i class="custom-stroke" data-feather="image" width="17" height="17" stroke-width="2"></i></td>
+                    <td class="text-yellow font-weight-bold">PENDING</td>
+                    <td><a class="author-link" href="#">John Edlios</a></td>
+                    <td><a class="btn-icon mr-2" href="job.html"><i class="custom-stroke" data-feather="edit" width="16" height="16" stroke-width="2"></i></a>
+                      <button class="btn-icon"><i class="custom-stroke" data-feather="trash" width="16" height="16" stroke-width="2"></i></button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="d-md-none">
+              <div class="job-shortcut-card">
+                <div class="card-body">
+                  <dl class="shortcut-status d-flex">
+                    <dt>2021-01-03 04:25:27</dt>
+                    <dd class="text-orange font-weight-bold">ASSIGNED</dd>
+                  </dl>
+                  <dl class="shortcut-customer">
+                    <dt>Pexels Ltd.,</dt>
+                    <dd class="text-orange m-0">AB Tower, 1256 Garden rose str, Orange County, LA</dd>
+                  </dl>
+                  <ul class="shortcut-info d-flex flex-wrap">
+                    <li>Original: 863</li>
+                    <li>Reworked: 363</li>
+                    <li>Type: <i class="custom-stroke" data-feather="image" width="17" height="17" stroke-width="2"></i></li>
+                    <li class="editor">Editor IMG: <a class="author-link" href="#">Kevin EditorImg</a></li>
+                    <li class="editor">Editor VID: <a class="author-link" href="#">Jerry EditorVid</a></li>
+                  </ul>
+                </div>
+                <div class="card-footer">
+                  <ul class="card-buttons d-flex">
+                    <li><a class="btn-icon" href="job.html"><i class="custom-stroke" data-feather="edit" width="16" height="16" stroke-width="2"></i></a></li>
+                    <li>
+                      <button class="btn-icon"><i class="custom-stroke" data-feather="trash" width="16" height="16" stroke-width="2"></i></button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="job-shortcut-card">
+                <div class="card-body">
+                  <dl class="shortcut-status d-flex">
+                    <dt>2021-01-03 04:25:27</dt>
+                    <dd class="text-green font-weight-bold">IN-PROGRESS</dd>
+                  </dl>
+                  <dl class="shortcut-customer">
+                    <dt>Pexels Ltd.,Pexels Ltd.,Pexels Ltd.,Pexels Ltd.,Pexels Ltd.,Pexels Ltd.,Pexels Ltd.,Pexels Ltd.,Pexels Ltd.,Pexels Ltd.,Pexels Ltd.,Pexels Ltd.,</dt>
+                    <dd class="text-orange m-0">AB Tower, 1256 Garden rose str, Orange County, LA</dd>
+                  </dl>
+                  <ul class="shortcut-info d-flex flex-wrap">
+                    <li>Original: 863</li>
+                    <li>Reworked: 363</li>
+                    <li>Type: <i class="custom-stroke" data-feather="video" width="17" height="17" stroke-width="2"></i></li>
+                    <li class="editor">Editor IMG: <a class="author-link" href="#">Kevin EditorImg</a></li>
+                    <li class="editor">Editor VID: <a class="author-link" href="#">Jerry EditorVid</a></li>
+                  </ul>
+                </div>
+                <div class="card-footer">
+                  <ul class="card-buttons d-flex">
+                    <li><a class="btn-icon" href="job.html"><i class="custom-stroke" data-feather="edit" width="16" height="16" stroke-width="2"></i></a></li>
+                    <li>
+                      <button class="btn-icon"><i class="custom-stroke" data-feather="trash" width="16" height="16" stroke-width="2"></i></button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="job-shortcut-card">
+                <div class="card-body">
+                  <dl class="shortcut-status d-flex">
+                    <dt>2021-01-03 04:25:27</dt>
+                    <dd class="text-yellow font-weight-bold">PENDING</dd>
+                  </dl>
+                  <dl class="shortcut-customer">
+                    <dt>Pexels Ltd.,</dt>
+                    <dd class="text-orange m-0">AB Tower, 1256 Garden rose str, Orange County, LA</dd>
+                  </dl>
+                  <ul class="shortcut-info d-flex flex-wrap">
+                    <li>Original: 863</li>
+                    <li>Reworked: 363</li>
+                    <li>Type: <i class="custom-stroke" data-feather="video" width="17" height="17" stroke-width="2"></i></li>
+                    <li class="editor">Editor IMG: <a class="author-link" href="#">Kevin EditorImg</a></li>
+                    <li class="editor">Editor VID: <a class="author-link" href="#">Jerry EditorVid</a></li>
+                  </ul>
+                </div>
+                <div class="card-footer">
+                  <ul class="card-buttons d-flex">
+                    <li><a class="btn-icon" href="job.html"><i class="custom-stroke" data-feather="edit" width="16" height="16" stroke-width="2"></i></a></li>
+                    <li>
+                      <button class="btn-icon"><i class="custom-stroke" data-feather="trash" width="16" height="16" stroke-width="2"></i></button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <nav class="mt-4" aria-label="Active Jobs Pagination">
+              <ul class="pagination justify-content-end">
+                <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1" aria-disabled="true"><i data-feather="chevron-left" width="25" height="30"></i></a></li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item"><a class="page-link" href="#"><i data-feather="chevron-right" width="25" height="30"></i></a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!-- END: PAGE - DASHBOARD-->
+    </section>
+    <script src="js/libs.min.js"></script>
+    <script src="js/plugins.min.js"></script>
+    <script src="js/start.min.js"></script>
+    <script src="js/ie9fix.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.10.0/js/lightgallery-all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mhayes-twentytwenty/1.0.0/js/jquery.twentytwenty.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mhayes-twentytwenty/1.0.0/js/jquery.event.move.min.js">
+      <feather class="replace"></feather>
+    </script>
+    <!-- END : scripts-->
+  </body>
+</html>

@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html lang="en" class="no-js ie ie8"><![endif]-->
+<!--[if IE 9]><html lang="en" class="no-js ie ie9"><![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en">
+  <!--<![endif]-->
+  <head>
+    <title>My Site - Jobs</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.10.0/css/lightgallery.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.min.css">
+    <!--[if lt IE 9]> <script src="js/ie9fix.min.js"></script><![endif]-->
+  </head>
+  <body class="admin-page">
+    <div id="loading-screen">
+      <div class="spinner"></div>
+    </div>
+    <header class="header fixed-header">
+      <div class="container">
+        <nav class="d-flex main-nav">
+          <div class="logo"><a href="./index.html"><img src="./assets/img/images/logo.png" width="155" alt=""></a></div>
+          <ul class="nav-list d-flex ml-auto">
+            <li class="nav-item"><a class="nav-link" href="./dashboard.html">DASHBOARD</a></li>
+            <li class="nav-item has-pulldown nav-active"><a class="nav-link" href="jobs.html">JOBS</a>
+              <ul class="nav-pulldown">
+                <li class="nav-pulldown-item"><a href="jobs.html">Active Jobs</a></li>
+                <li class="nav-pulldown-item"><a href="jobs.html">Completed Jobs</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="./accounts.html">ACCOUNTS</a></li>
+            <li class="nav-item"><a class="nav-link" href="./reports.html">REPORTS</a></li>
+            <li class="nav-item"><a class="nav-link" href="./sign-in.html">LOG OUT<i class="fas fa-sign-out-alt ml-1"></i></a></li>
+          </ul>
+          <div id="menu-toggle"><span></span><span></span><span></span><span></span></div>
+        </nav>
+      </div>
+    </header>
+    <!-- END: header-->
+    <section class="main">
+      <div class="container ui-admin">
+        <h3 class="block-job-title">Create Job</h3>
+        <div class="job-detail-wrapper pb-5">
+          <div class="row">
+            <div class="col-md-8 mb-5">
+              <p class="step-title mb-4 pb-3">2. Upload your images / videos</p>
+              <form class="row" action="create-job-3.html" method="GET">
+                <div class="col-md-12">
+                  <div class="image-input">
+                    <p class="mb-2 text-info-small">You have 10 images for free</p>
+                    <input class="custom-input-file" type="file" id="input-file-1">
+                    <label class="custom-input-file-label" for="input-file-1">Drop your file here</label>
+                    <p class="mb-0 text-secondary">Allow type: .jpg, .png, .tif, .mp4, .mov, .wav</p>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="col-md-12">
+              <form class="row" action="jobs.html" method="GET">
+                <div class="col-md-12">
+                  <div class="tab-button-wrapper">
+                    <ul class="nav" role="tablist">
+                      <li class="nav-item" role="presentation"><a class="nav-link active" data-toggle="tab" href="#media-images" aria-controls="media-images" role="tab" aria-selected="true">Images (10)</a></li>
+                      <li class="nav-item" role="presentation"><a class="nav-link" data-toggle="tab" href="#media-videos" aria-controls="media-videos" role="tab" aria-selected="true">Videos (10)</a></li>
+                    </ul>
+                  </div>
+                  <div class="tab-content-wrapper mt-4">
+                    <div class="tab-content">
+                      <div class="tab-pane show active" id="media-images" role="tabpane">
+                        <div class="job-image-card">
+                          <div class="remove-card">Remove</div>
+                          <dl class="input-file-name size-small d-flex">
+                            <dt>Image</dt>
+                            <dd>leaf_in_jungle.tif</dd>
+                          </dl>
+                          <div class="job-card-preview d-flex">
+                            <div class="preview-input">
+                              <div class="wrap-img"><img src="assets/img/images/editor-img-1.jpg" alt="">
+                                <div class="progress-block">
+                                  <p class="progress-title">Uploading ...</p>
+                                  <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%"><span class="sr-only"></span></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="inputs-content">
+                              <div class="requirements-wrapper d-flex flex-wrap row">
+                                <dl class="requirement-item col-md-7">
+                                  <dt>I want to remove objects:</dt>
+                                  <dd class="d-flex">
+                                    <ul class="list-checkbox row">
+                                      <li class="col-md-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="detail-checkbox-4">
+                                        <label class="form-check-label" for="detail-checkbox-4">Car (£2.00)</label>
+                                      </li>
+                                      <li class="col-md-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="detail-checkbox-5">
+                                        <label class="form-check-label" for="detail-checkbox-5">Reflection</label>
+                                      </li>
+                                      <li class="col-md-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="detail-checkbox-6">
+                                        <label class="form-check-label" for="detail-checkbox-6">Bins</label>
+                                      </li>
+                                      <li class="col-md-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="detail-checkbox-8">
+                                        <label class="form-check-label" for="detail-checkbox-8">Add glass</label>
+                                      </li>
+                                      <li class="col-md-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="detail-checkbox-7">
+                                        <label class="form-check-label" for="detail-checkbox-7">Pet          </label>
+                                      </li>
+                                    </ul>
+                                  </dd>
+                                </dl>
+                                <dl class="requirement-item col-md-5">
+                                  <dt>Other requirement:</dt>
+                                  <dd>
+                                    <textarea class="form-control" rows="2" placeholder=""></textarea>
+                                  </dd>
+                                </dl>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="job-image-card">
+                          <div class="remove-card">Remove</div>
+                          <dl class="input-file-name size-small d-flex">
+                            <dt>Image</dt>
+                            <dd>leaf_in_jungle.tif</dd>
+                          </dl>
+                          <div class="job-card-preview d-flex">
+                            <div class="preview-input"><span class="wrap-img"><img src="assets/img/images/editor-img-1.jpg" alt=""></span></div>
+                            <div class="inputs-content">
+                              <div class="requirements-wrapper d-flex flex-wrap row">
+                                <dl class="requirement-item col-md-7">
+                                  <dt>I want to remove objects:</dt>
+                                  <dd class="d-flex">
+                                    <ul class="list-checkbox row">
+                                      <li class="col-md-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="detail-checkbox-4">
+                                        <label class="form-check-label" for="detail-checkbox-4">Car (£2.00)</label>
+                                      </li>
+                                      <li class="col-md-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="detail-checkbox-5">
+                                        <label class="form-check-label" for="detail-checkbox-5">Reflection</label>
+                                      </li>
+                                      <li class="col-md-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="detail-checkbox-6">
+                                        <label class="form-check-label" for="detail-checkbox-6">Bins</label>
+                                      </li>
+                                      <li class="col-md-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="detail-checkbox-8">
+                                        <label class="form-check-label" for="detail-checkbox-8">Add glass</label>
+                                      </li>
+                                      <li class="col-md-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="detail-checkbox-7">
+                                        <label class="form-check-label" for="detail-checkbox-7">Pet          </label>
+                                      </li>
+                                    </ul>
+                                  </dd>
+                                </dl>
+                                <dl class="requirement-item col-md-5">
+                                  <dt>Other requirement:</dt>
+                                  <dd>
+                                    <textarea class="form-control" rows="2" placeholder=""></textarea>
+                                  </dd>
+                                </dl>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="job-image-card">
+                          <div class="remove-card">Remove</div>
+                          <dl class="input-file-name size-small d-flex">
+                            <dt>Image</dt>
+                            <dd>leaf_in_jungle.tif</dd>
+                          </dl>
+                          <div class="job-card-preview d-flex">
+                            <div class="preview-input"><span class="wrap-img"><img src="assets/img/images/editor-img-1.jpg" alt=""></span></div>
+                            <div class="inputs-content">
+                              <div class="requirements-wrapper d-flex flex-wrap row">
+                                <dl class="requirement-item col-md-7">
+                                  <dt>I want to remove objects:</dt>
+                                  <dd class="d-flex">
+                                    <ul class="list-checkbox row">
+                                      <li class="col-md-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="detail-checkbox-4">
+                                        <label class="form-check-label" for="detail-checkbox-4">Car (£2.00)</label>
+                                      </li>
+                                      <li class="col-md-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="detail-checkbox-5">
+                                        <label class="form-check-label" for="detail-checkbox-5">Reflection</label>
+                                      </li>
+                                      <li class="col-md-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="detail-checkbox-6">
+                                        <label class="form-check-label" for="detail-checkbox-6">Bins</label>
+                                      </li>
+                                      <li class="col-md-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="detail-checkbox-8">
+                                        <label class="form-check-label" for="detail-checkbox-8">Add glass</label>
+                                      </li>
+                                      <li class="col-md-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="detail-checkbox-7">
+                                        <label class="form-check-label" for="detail-checkbox-7">Pet          </label>
+                                      </li>
+                                    </ul>
+                                  </dd>
+                                </dl>
+                                <dl class="requirement-item col-md-5">
+                                  <dt>Other requirement:</dt>
+                                  <dd>
+                                    <textarea class="form-control" rows="2" placeholder=""></textarea>
+                                  </dd>
+                                </dl>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="job-image-card">
+                          <div class="remove-card">Remove</div>
+                          <dl class="input-file-name size-small d-flex">
+                            <dt>Image</dt>
+                            <dd>leaf_in_jungle.tif</dd>
+                          </dl>
+                          <div class="job-card-preview d-flex">
+                            <div class="preview-input"><span class="wrap-img"><img src="assets/img/images/editor-img-1.jpg" alt=""></span></div>
+                            <div class="inputs-content">
+                              <div class="requirements-wrapper d-flex flex-wrap row">
+                                <dl class="requirement-item col-md-7">
+                                  <dt>I want to remove objects:</dt>
+                                  <dd class="d-flex">
+                                    <ul class="list-checkbox row">
+                                      <li class="col-md-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="detail-checkbox-4">
+                                        <label class="form-check-label" for="detail-checkbox-4">Car (£2.00)</label>
+                                      </li>
+                                      <li class="col-md-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="detail-checkbox-5">
+                                        <label class="form-check-label" for="detail-checkbox-5">Reflection</label>
+                                      </li>
+                                      <li class="col-md-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="detail-checkbox-6">
+                                        <label class="form-check-label" for="detail-checkbox-6">Bins</label>
+                                      </li>
+                                      <li class="col-md-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="detail-checkbox-8">
+                                        <label class="form-check-label" for="detail-checkbox-8">Add glass</label>
+                                      </li>
+                                      <li class="col-md-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="detail-checkbox-7">
+                                        <label class="form-check-label" for="detail-checkbox-7">Pet          </label>
+                                      </li>
+                                    </ul>
+                                  </dd>
+                                </dl>
+                                <dl class="requirement-item col-md-5">
+                                  <dt>Other requirement:</dt>
+                                  <dd>
+                                    <textarea class="form-control" rows="2" placeholder=""></textarea>
+                                  </dd>
+                                </dl>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="job-image-card">
+                          <div class="remove-card">Remove</div>
+                          <dl class="input-file-name size-small d-flex">
+                            <dt>Image</dt>
+                            <dd>leaf_in_jungle.tif</dd>
+                          </dl>
+                          <div class="job-card-preview d-flex">
+                            <div class="preview-input"><span class="wrap-img"><img src="assets/img/images/editor-img-1.jpg" alt=""></span></div>
+                            <div class="inputs-content">
+                              <div class="requirements-wrapper d-flex flex-wrap row">
+                                <dl class="requirement-item col-md-7">
+                                  <dt>I want to remove objects:</dt>
+                                  <dd class="d-flex">
+                                    <ul class="list-checkbox row">
+                                      <li class="col-md-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="detail-checkbox-4">
+                                        <label class="form-check-label" for="detail-checkbox-4">Car (£2.00)</label>
+                                      </li>
+                                      <li class="col-md-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="detail-checkbox-5">
+                                        <label class="form-check-label" for="detail-checkbox-5">Reflection</label>
+                                      </li>
+                                      <li class="col-md-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="detail-checkbox-6">
+                                        <label class="form-check-label" for="detail-checkbox-6">Bins</label>
+                                      </li>
+                                      <li class="col-md-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="detail-checkbox-8">
+                                        <label class="form-check-label" for="detail-checkbox-8">Add glass</label>
+                                      </li>
+                                      <li class="col-md-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="detail-checkbox-7">
+                                        <label class="form-check-label" for="detail-checkbox-7">Pet          </label>
+                                      </li>
+                                    </ul>
+                                  </dd>
+                                </dl>
+                                <dl class="requirement-item col-md-5">
+                                  <dt>Other requirement:</dt>
+                                  <dd>
+                                    <textarea class="form-control" rows="2" placeholder=""></textarea>
+                                  </dd>
+                                </dl>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="job-image-card">
+                          <div class="remove-card">Remove</div>
+                          <dl class="input-file-name size-small d-flex">
+                            <dt>Image</dt>
+                            <dd>leaf_in_jungle.tif</dd>
+                          </dl>
+                          <div class="job-card-preview d-flex">
+                            <div class="preview-input"><span class="wrap-img"><img src="assets/img/images/editor-img-1.jpg" alt=""></span></div>
+                            <div class="inputs-content">
+                              <div class="requirements-wrapper d-flex flex-wrap row">
+                                <dl class="requirement-item col-md-7">
+                                  <dt>I want to remove objects:</dt>
+                                  <dd class="d-flex">
+                                    <ul class="list-checkbox row">
+                                      <li class="col-md-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="detail-checkbox-4">
+                                        <label class="form-check-label" for="detail-checkbox-4">Car (£2.00)</label>
+                                      </li>
+                                      <li class="col-md-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="detail-checkbox-5">
+                                        <label class="form-check-label" for="detail-checkbox-5">Reflection</label>
+                                      </li>
+                                      <li class="col-md-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="detail-checkbox-6">
+                                        <label class="form-check-label" for="detail-checkbox-6">Bins</label>
+                                      </li>
+                                      <li class="col-md-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="detail-checkbox-8">
+                                        <label class="form-check-label" for="detail-checkbox-8">Add glass</label>
+                                      </li>
+                                      <li class="col-md-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="detail-checkbox-7">
+                                        <label class="form-check-label" for="detail-checkbox-7">Pet          </label>
+                                      </li>
+                                    </ul>
+                                  </dd>
+                                </dl>
+                                <dl class="requirement-item col-md-5">
+                                  <dt>Other requirement:</dt>
+                                  <dd>
+                                    <textarea class="form-control" rows="2" placeholder=""></textarea>
+                                  </dd>
+                                </dl>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="job-image-card">
+                          <div class="remove-card">Remove</div>
+                          <dl class="input-file-name size-small d-flex">
+                            <dt>Image</dt>
+                            <dd>leaf_in_jungle.tif</dd>
+                          </dl>
+                          <div class="job-card-preview d-flex">
+                            <div class="preview-input"><span class="wrap-img"><img src="assets/img/images/editor-img-1.jpg" alt=""></span></div>
+                            <div class="inputs-content">
+                              <div class="requirements-wrapper d-flex flex-wrap row">
+                                <dl class="requirement-item col-md-7">
+                                  <dt>I want to remove objects:</dt>
+                                  <dd class="d-flex">
+                                    <ul class="list-checkbox row">
+                                      <li class="col-md-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="detail-checkbox-4">
+                                        <label class="form-check-label" for="detail-checkbox-4">Car (£2.00)</label>
+                                      </li>
+                                      <li class="col-md-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="detail-checkbox-5">
+                                        <label class="form-check-label" for="detail-checkbox-5">Reflection</label>
+                                      </li>
+                                      <li class="col-md-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="detail-checkbox-6">
+                                        <label class="form-check-label" for="detail-checkbox-6">Bins</label>
+                                      </li>
+                                      <li class="col-md-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="detail-checkbox-8">
+                                        <label class="form-check-label" for="detail-checkbox-8">Add glass</label>
+                                      </li>
+                                      <li class="col-md-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="detail-checkbox-7">
+                                        <label class="form-check-label" for="detail-checkbox-7">Pet          </label>
+                                      </li>
+                                    </ul>
+                                  </dd>
+                                </dl>
+                                <dl class="requirement-item col-md-5">
+                                  <dt>Other requirement:</dt>
+                                  <dd>
+                                    <textarea class="form-control" rows="2" placeholder=""></textarea>
+                                  </dd>
+                                </dl>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="job-image-card">
+                          <div class="remove-card">Remove</div>
+                          <dl class="input-file-name size-small d-flex">
+                            <dt>Image</dt>
+                            <dd>leaf_in_jungle.tif</dd>
+                          </dl>
+                          <div class="job-card-preview d-flex">
+                            <div class="preview-input"><span class="wrap-img"><img src="assets/img/images/editor-img-1.jpg" alt=""></span></div>
+                            <div class="inputs-content">
+                              <div class="requirements-wrapper d-flex flex-wrap row">
+                                <dl class="requirement-item col-md-7">
+                                  <dt>I want to remove objects:</dt>
+                                  <dd class="d-flex">
+                                    <ul class="list-checkbox row">
+                                      <li class="col-md-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="detail-checkbox-4">
+                                        <label class="form-check-label" for="detail-checkbox-4">Car (£2.00)</label>
+                                      </li>
+                                      <li class="col-md-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="detail-checkbox-5">
+                                        <label class="form-check-label" for="detail-checkbox-5">Reflection</label>
+                                      </li>
+                                      <li class="col-md-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="detail-checkbox-6">
+                                        <label class="form-check-label" for="detail-checkbox-6">Bins</label>
+                                      </li>
+                                      <li class="col-md-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="detail-checkbox-8">
+                                        <label class="form-check-label" for="detail-checkbox-8">Add glass</label>
+                                      </li>
+                                      <li class="col-md-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="detail-checkbox-7">
+                                        <label class="form-check-label" for="detail-checkbox-7">Pet          </label>
+                                      </li>
+                                    </ul>
+                                  </dd>
+                                </dl>
+                                <dl class="requirement-item col-md-5">
+                                  <dt>Other requirement:</dt>
+                                  <dd>
+                                    <textarea class="form-control" rows="2" placeholder=""></textarea>
+                                  </dd>
+                                </dl>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="job-image-card">
+                          <div class="remove-card">Remove</div>
+                          <dl class="input-file-name size-small d-flex">
+                            <dt>Image</dt>
+                            <dd>leaf_in_jungle.tif</dd>
+                          </dl>
+                          <div class="job-card-preview d-flex">
+                            <div class="preview-input"><span class="wrap-img"><img src="assets/img/images/editor-img-1.jpg" alt=""></span></div>
+                            <div class="inputs-content">
+                              <div class="requirements-wrapper d-flex flex-wrap row">
+                                <dl class="requirement-item col-md-7">
+                                  <dt>I want to remove objects:</dt>
+                                  <dd class="d-flex">
+                                    <ul class="list-checkbox row">
+                                      <li class="col-md-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="detail-checkbox-4">
+                                        <label class="form-check-label" for="detail-checkbox-4">Car (£2.00)</label>
+                                      </li>
+                                      <li class="col-md-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="detail-checkbox-5">
+                                        <label class="form-check-label" for="detail-checkbox-5">Reflection</label>
+                                      </li>
+                                      <li class="col-md-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="detail-checkbox-6">
+                                        <label class="form-check-label" for="detail-checkbox-6">Bins</label>
+                                      </li>
+                                      <li class="col-md-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="detail-checkbox-8">
+                                        <label class="form-check-label" for="detail-checkbox-8">Add glass</label>
+                                      </li>
+                                      <li class="col-md-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="detail-checkbox-7">
+                                        <label class="form-check-label" for="detail-checkbox-7">Pet          </label>
+                                      </li>
+                                    </ul>
+                                  </dd>
+                                </dl>
+                                <dl class="requirement-item col-md-5">
+                                  <dt>Other requirement:</dt>
+                                  <dd>
+                                    <textarea class="form-control" rows="2" placeholder=""></textarea>
+                                  </dd>
+                                </dl>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane" id="media-videos" role="tabpane">
+                        <div class="job-image-card">
+                          <div class="remove-card">Remove</div>
+                          <dl class="input-file-name size-small d-flex">
+                            <dt class="video">Video</dt>
+                            <dd>leaf_in_jungle.tif</dd>
+                          </dl>
+                          <div class="job-card-preview d-flex">
+                            <div class="preview-input video-thumbnail"><span class="wrap-img"><img src="assets/img/images/editor-img-3.jpg" alt="">
+                                <div class="progress-block">
+                                  <p class="progress-title">Uploading ...</p>
+                                  <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%"><span class="sr-only"></span></div>
+                                  </div>
+                                </div></span></div>
+                            <div class="inputs-content">
+                              <div class="requirements-wrapper d-flex flex-wrap">
+                                <dl class="requirement-item flex-grow-1">
+                                  <dt>Other requirement:</dt>
+                                  <dd>
+                                    <textarea class="form-control" rows="2" placeholder=""></textarea>
+                                  </dd>
+                                </dl>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="job-image-card">
+                          <div class="remove-card">Remove</div>
+                          <dl class="input-file-name size-small d-flex">
+                            <dt class="video">Video</dt>
+                            <dd>leaf_in_jungle.tif</dd>
+                          </dl>
+                          <div class="job-card-preview d-flex">
+                            <div class="preview-input video-thumbnail">
+                              <div class="play-button"><i class="custom-stroke" data-feather="play" width="20" height="20" stroke-width="2"></i></div><span class="wrap-img"><img src="assets/img/images/editor-img-3.jpg" alt=""></span>
+                            </div>
+                            <div class="inputs-content">
+                              <div class="requirements-wrapper d-flex flex-wrap">
+                                <dl class="requirement-item flex-grow-1">
+                                  <dt>Other requirement:</dt>
+                                  <dd>
+                                    <textarea class="form-control" rows="2" placeholder=""></textarea>
+                                  </dd>
+                                </dl>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="job-image-card">
+                          <div class="remove-card">Remove</div>
+                          <dl class="input-file-name size-small d-flex">
+                            <dt class="video">Video</dt>
+                            <dd>leaf_in_jungle.tif</dd>
+                          </dl>
+                          <div class="job-card-preview d-flex">
+                            <div class="preview-input video-thumbnail">
+                              <div class="play-button"><i class="custom-stroke" data-feather="play" width="20" height="20" stroke-width="2"></i></div><span class="wrap-img"><img src="assets/img/images/editor-img-3.jpg" alt=""></span>
+                            </div>
+                            <div class="inputs-content">
+                              <div class="requirements-wrapper d-flex flex-wrap">
+                                <dl class="requirement-item flex-grow-1">
+                                  <dt>Other requirement:</dt>
+                                  <dd>
+                                    <textarea class="form-control" rows="2" placeholder=""></textarea>
+                                  </dd>
+                                </dl>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="job-image-card">
+                          <div class="remove-card">Remove</div>
+                          <dl class="input-file-name size-small d-flex">
+                            <dt class="video">Video</dt>
+                            <dd>leaf_in_jungle.tif</dd>
+                          </dl>
+                          <div class="job-card-preview d-flex">
+                            <div class="preview-input video-thumbnail">
+                              <div class="play-button"><i class="custom-stroke" data-feather="play" width="20" height="20" stroke-width="2"></i></div><span class="wrap-img"><img src="assets/img/images/editor-img-3.jpg" alt=""></span>
+                            </div>
+                            <div class="inputs-content">
+                              <div class="requirements-wrapper d-flex flex-wrap">
+                                <dl class="requirement-item flex-grow-1">
+                                  <dt>Other requirement:</dt>
+                                  <dd>
+                                    <textarea class="form-control" rows="2" placeholder=""></textarea>
+                                  </dd>
+                                </dl>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="job-image-card">
+                          <div class="remove-card">Remove</div>
+                          <dl class="input-file-name size-small d-flex">
+                            <dt class="video">Video</dt>
+                            <dd>leaf_in_jungle.tif</dd>
+                          </dl>
+                          <div class="job-card-preview d-flex">
+                            <div class="preview-input video-thumbnail">
+                              <div class="play-button"><i class="custom-stroke" data-feather="play" width="20" height="20" stroke-width="2"></i></div><span class="wrap-img"><img src="assets/img/images/editor-img-3.jpg" alt=""></span>
+                            </div>
+                            <div class="inputs-content">
+                              <div class="requirements-wrapper d-flex flex-wrap">
+                                <dl class="requirement-item flex-grow-1">
+                                  <dt>Other requirement:</dt>
+                                  <dd>
+                                    <textarea class="form-control" rows="2" placeholder=""></textarea>
+                                  </dd>
+                                </dl>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="job-image-card">
+                          <div class="remove-card">Remove</div>
+                          <dl class="input-file-name size-small d-flex">
+                            <dt class="video">Video</dt>
+                            <dd>leaf_in_jungle.tif</dd>
+                          </dl>
+                          <div class="job-card-preview d-flex">
+                            <div class="preview-input video-thumbnail">
+                              <div class="play-button"><i class="custom-stroke" data-feather="play" width="20" height="20" stroke-width="2"></i></div><span class="wrap-img"><img src="assets/img/images/editor-img-3.jpg" alt=""></span>
+                            </div>
+                            <div class="inputs-content">
+                              <div class="requirements-wrapper d-flex flex-wrap">
+                                <dl class="requirement-item flex-grow-1">
+                                  <dt>Other requirement:</dt>
+                                  <dd>
+                                    <textarea class="form-control" rows="2" placeholder=""></textarea>
+                                  </dd>
+                                </dl>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="job-image-card">
+                          <div class="remove-card">Remove</div>
+                          <dl class="input-file-name size-small d-flex">
+                            <dt class="video">Video</dt>
+                            <dd>leaf_in_jungle.tif</dd>
+                          </dl>
+                          <div class="job-card-preview d-flex">
+                            <div class="preview-input video-thumbnail">
+                              <div class="play-button"><i class="custom-stroke" data-feather="play" width="20" height="20" stroke-width="2"></i></div><span class="wrap-img"><img src="assets/img/images/editor-img-3.jpg" alt=""></span>
+                            </div>
+                            <div class="inputs-content">
+                              <div class="requirements-wrapper d-flex flex-wrap">
+                                <dl class="requirement-item flex-grow-1">
+                                  <dt>Other requirement:</dt>
+                                  <dd>
+                                    <textarea class="form-control" rows="2" placeholder=""></textarea>
+                                  </dd>
+                                </dl>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="job-image-card">
+                          <div class="remove-card">Remove</div>
+                          <dl class="input-file-name size-small d-flex">
+                            <dt class="video">Video</dt>
+                            <dd>leaf_in_jungle.tif</dd>
+                          </dl>
+                          <div class="job-card-preview d-flex">
+                            <div class="preview-input video-thumbnail">
+                              <div class="play-button"><i class="custom-stroke" data-feather="play" width="20" height="20" stroke-width="2"></i></div><span class="wrap-img"><img src="assets/img/images/editor-img-3.jpg" alt=""></span>
+                            </div>
+                            <div class="inputs-content">
+                              <div class="requirements-wrapper d-flex flex-wrap">
+                                <dl class="requirement-item flex-grow-1">
+                                  <dt>Other requirement:</dt>
+                                  <dd>
+                                    <textarea class="form-control" rows="2" placeholder=""></textarea>
+                                  </dd>
+                                </dl>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="job-image-card">
+                          <div class="remove-card">Remove</div>
+                          <dl class="input-file-name size-small d-flex">
+                            <dt class="video">Video</dt>
+                            <dd>leaf_in_jungle.tif</dd>
+                          </dl>
+                          <div class="job-card-preview d-flex">
+                            <div class="preview-input video-thumbnail">
+                              <div class="play-button"><i class="custom-stroke" data-feather="play" width="20" height="20" stroke-width="2"></i></div><span class="wrap-img"><img src="assets/img/images/editor-img-3.jpg" alt=""></span>
+                            </div>
+                            <div class="inputs-content">
+                              <div class="requirements-wrapper d-flex flex-wrap">
+                                <dl class="requirement-item flex-grow-1">
+                                  <dt>Other requirement:</dt>
+                                  <dd>
+                                    <textarea class="form-control" rows="2" placeholder=""></textarea>
+                                  </dd>
+                                </dl>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="job-image-card">
+                          <div class="remove-card">Remove</div>
+                          <dl class="input-file-name size-small d-flex">
+                            <dt class="video">Video</dt>
+                            <dd>leaf_in_jungle.tif</dd>
+                          </dl>
+                          <div class="job-card-preview d-flex">
+                            <div class="preview-input video-thumbnail">
+                              <div class="play-button"><i class="custom-stroke" data-feather="play" width="20" height="20" stroke-width="2"></i></div><span class="wrap-img"><img src="assets/img/images/editor-img-3.jpg" alt=""></span>
+                            </div>
+                            <div class="inputs-content">
+                              <div class="requirements-wrapper d-flex flex-wrap">
+                                <dl class="requirement-item flex-grow-1">
+                                  <dt>Other requirement:</dt>
+                                  <dd>
+                                    <textarea class="form-control" rows="2" placeholder=""></textarea>
+                                  </dd>
+                                </dl>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-submit mt-4">
+                    <button class="btn btn-primary" type="submit">Finish</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END: PAGE - JOB DETAIL-->
+    </section>
+    <script src="js/libs.min.js"></script>
+    <script src="js/plugins.min.js"></script>
+    <script src="js/start.min.js"></script>
+    <script src="js/ie9fix.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.10.0/js/lightgallery-all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mhayes-twentytwenty/1.0.0/js/jquery.twentytwenty.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mhayes-twentytwenty/1.0.0/js/jquery.event.move.min.js">
+      <feather class="replace"></feather>
+    </script>
+    <!-- END : scripts-->
+  </body>
+</html>
